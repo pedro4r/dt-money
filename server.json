@@ -1,0 +1,28 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "description": "Website development",
+            "type": "income",
+            "category": "selling",
+            "price": 1500,
+            "createdAt": "2023-06-01T16:51:50.699Z"
+        },
+        {
+            "id": 2,
+            "description": "Hamburguer",
+            "type": "outcome",
+            "category": "food",
+            "price": 100,
+            "createdAt": "2023-06-01T16:51:50.699Z"
+        },
+        {
+            "id": 3,
+            "description": "Home Leasing",
+            "type": "outcome",
+            "category": "leasing",
+            "price": 1000,
+            "createdAt": "2023-06-01T16:51:50.699Z"
+        }
+    ]
+}
