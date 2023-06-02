@@ -39,6 +39,14 @@
       "type": "outcome",
       "createdAt": "2023-06-01T23:10:22.363Z",
       "id": 5
+    },
+    {
+      "description": "odkdod",
+      "category": "djsidjsid",
+      "price": 23,
+      "type": "outcome",
+      "createdAt": "2023-06-02T17:19:41.647Z",
+      "id": 6
     }
   ]
 }
