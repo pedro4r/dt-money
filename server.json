@@ -47,6 +47,14 @@
       "type": "outcome",
       "createdAt": "2023-06-02T17:19:41.647Z",
       "id": 6
+    },
+    {
+      "description": "Pedro",
+      "category": "jdhdhd",
+      "price": 23,
+      "type": "income",
+      "createdAt": "2023-06-02T17:42:11.754Z",
+      "id": 7
     }
   ]
 }
