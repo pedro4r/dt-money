@@ -13,7 +13,7 @@ interface Transaction {
 
 interface TransactionContextType {
     transactions: Transaction[]
-    fetchTransactions: () => void;
+    fetchTransactions: (data?: string) => void;
     createTransaction: (data: CreateTransactionInput) => Promise<void>
 }
 
@@ -34,10 +34,17 @@ export function TransactionProvider({ children }: TransactionProviderProps) {
 
     const [transactions, setTransactions] = useState<Transaction[]>([]);
 
-    const fetchTransactions = useCallback(() => {
+    const fetchTransactions = useCallback((data?: string) => {
         const storedStateAsJSON = localStorage.getItem('@dt-money:transactions-1.0.0') || '[]';
-        const storedStateAsArray = JSON.parse(storedStateAsJSON);
-        setTransactions(storedStateAsArray);
+        const storedStateAsArray:Transaction[] = JSON.parse(storedStateAsJSON);
+        if(data) {
+            const filteredTransactions = storedStateAsArray.filter((item)=> item.description === data)
+            setTransactions(filteredTransactions);
+        }
+        else {
+            setTransactions(storedStateAsArray);
+        }
+        
     }, [])
 
     const createTransaction = useCallback(async (data: CreateTransactionInput) => {
