@@ -1,6 +1,3 @@
-# DT-MONEY
-Financial Manager Application
-
 ![Demo Animation](https://raw.githubusercontent.com/pedro4r/jupiter-ui/assets/images/dt-money.jpg)
 
 This application was designed for straightforward personal financial management. With it, you can add income and expense transactions, enabling you to see the total income/outcome and the final balance. Additionally, you can also search for transactions. All information is being stored in the browser's local storage.
